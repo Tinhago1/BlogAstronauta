@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased; /*utilizado nos projetos para deixar as fontes mais bonitas*/
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+:root{ /*para todo o documento*/
+  font-family: Mulish;
+  font-size: 62.5%;  /*valor de 62.5%, que equivale a 10px do font-size do navegador, Com isso, o font-size de 1.6rem do elemento body seria equivalente a 16px*/
+  --first-color: #B52184;
+  --second-color: #312D64;
+}
+
+body{
+  font-size: 1.6rem;
+  padding: 0 auto;
+  min-height: 100vh;
+}
+
+.astronauta {
+  width: 44.4rem;
+  height: 45.0rem; 
+  margin: auto;
+  display: block;
+  
+}
+
+
+h1{
+  color:var(--first-color);
+
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: normal;
+
+  margin-top: 1.7rem;
+}
+
+p{
+  color: var(--second-color);
+
+  text-align: center;
+  font-size: 2.0rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.seta{
+  width: 5.8rem;
+  height: 10.5rem;
+  display: block;
+  margin: 3.5rem auto 9.3rem;
+}
+
+.meio{
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  display: grid;
+  grid-template-columns: 33.7rem;
+  justify-content: center;
+  padding: 3.9rem;
+
+}
+
+
+figure{
+  margin: 5.2rem auto 5.2rem;
+  background-color: #fff;
+  padding: 2.64em;
+  border-radius: 1.9rem;
+  width: 45.7rem;
+}
+
+figure p, figure h1{
+  text-align: start;
+}
+
+.final{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  
+}
+
+#my-form{
+  max-width: 45.7rem; 
+  width: 100%;
+  background-color: #fff; 
+  border-radius: 1.9rem;
+  padding: 9rem 5.7rem; 
+}
+
+
+fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+
+fieldset legend{
+  color: var(--first-color);
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: normal;
+
+  margin-bottom: 4.3rem;
+
+
+}
+
+
+#texto input{
+  height: 15rem;
+}
+
+
+.input-wrapper input{
+  padding:1.2rem 1.6rem 1.6rem 5rem;
+  border-radius: 1.6rem;
+  width: 45.7rem;
+  border: 0.25rem solid #312D64;
+
+
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+
+input::placeholder{
+  color: var(--second-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5; 
+  padding: 1.6rem; 
+
+}
+
+
+#texto input::placeholder {
+  color: var(--second-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.6rem; 
+}
+
+.input-wrapper{
+  position: relative;
+}
+
+label{
+  position: absolute;
+  top: 1.2rem;
+  left: 1.4rem;
+  font-size: 1.6rem;
+}
+
+#texto .input-wrapper input{
+  padding: 0;
+  margin: 0;
+}
+
+
+button{
+  color: #fff;
+  background-color: var(--second-color);
+  width: 15.1rem;
+  height: 4.5rem;
+  border-radius: 1.6rem;
+  border: none;
+  
+}
+
+
+footer{
+  background-color: var(--second-color);
+  color: #FFF;
+  text-align: center;
+  font-size: 1.93rem;
+  font-weight: 600;
+
+
+  display: flex;
+  width: 100%;
+  height: 7.8rem;
+  padding: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width:1050px){
+
+.topo{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.astronauta{
+  margin-right: 2.9rem;
+  margin-bottom: 10.3rem;
+
+  width: 719.36px;
+  height: 732.357px;
+
+}
+
+.seta{
+margin-left: 0;
+margin-top: 17.9rem;
+}
+
+
+.explore{
+  margin: auto;
+}
+
+.topo h1{
+
+color: var(--first-color);
+font-size: 5.8rem;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+.topo p {
+color: var(--second-color);
+
+font-size: 3.2rem;
+font-weight: 600;
+text-align: start;
+
+
+}
+
+
+.meio{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+figcaption h1 {
+  color: var(--first-color);
+  font-size: 3.5rem;
+  font-weight: 900;
+
+  margin-bottom: 2.4rem;
+  margin-top: 4rem;
+
+}
+
+figcaption p{
+
+  color: var(--second-color);
+  font-size: 19.381px;
+  font-weight: 600;
+
+
+}
+
+.final{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding-left: 11.2rem;  
+  
+}
+
+#gradient{
+  width: auto;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+}
+
